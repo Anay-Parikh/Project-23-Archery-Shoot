@@ -58,9 +58,8 @@ function draw() {
   playerBow.display();
   computerBow.display();
 
-  if (keyCode == 32) {
-    playerArrow.display();
-  }
+  playerArrow.display();
+
   computerArrow.display();
 
   if (playerArrow.body.position.x >= width-310 || playerArrow.body.position.y >= 1000) {
