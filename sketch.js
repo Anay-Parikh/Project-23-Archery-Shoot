@@ -31,8 +31,8 @@ function setup() {
     180
   );
 
-  computerBow = new ComputerArcher(width-290, computerBase.body.position.y-180, 100, 100);
-  computerArrow = new ComputerArrow(width-290, computerBase.body.position.y-180, 100, 10);
+  computerBow = new ComputerArcher(width-270, computerBase.body.position.y-180, 100, 100);
+  computerArrow = new ComputerArrow(width-270, computerBase.body.position.y-180, 100, 10);
   
   playerBow = new PlayerArcher(340, playerBase.body.position.y-180, 100, 100);
   playerArrow = new PlayerArrow(340, playerBase.body.position.y-180, 100, 10);  
@@ -63,7 +63,7 @@ function draw() {
   }
   computerArrow.display();
 
-  if (playerArrow.body.position.x >= 1000 || playerArrow.body.position.y >= 1000) {
+  if (playerArrow.body.position.x >= width-270 || playerArrow.body.position.y >= 1000) {
       playerArrow.body.position.x = 340;
       playerArrow.body.position.y = playerBase.body.position.y-180;
       playerArrow.body.velocity.x = 0;
@@ -72,7 +72,7 @@ function draw() {
   }
 
   if (computerArrow.body.position.x <= 390 || computerArrow.body.position.y >= 1000) {
-    computerArrow.body.position.x = 1050;
+    computerArrow.body.position.x = width-270;
     computerArrow.body.position.y = computerBase.body.position.y-180;
     computerArrow.body.velocity.x = 0;
     computerArrow.body.velocity.y = 0;
