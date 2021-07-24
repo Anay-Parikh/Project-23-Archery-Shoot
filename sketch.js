@@ -33,7 +33,7 @@ function setup() {
   computerBow = new ComputerArcher(1050, computerBase.body.position.y-180, 100, 100);
   computerArrow = new ComputerArrow(1050, computerBase.body.position.y-180, 100, 10);
   
-  playerBow = new PlayerArcher(340, playerBase.body.position.y-180, 100, 100);
+  playerBow = new PlayerArcher(width-300, playerBase.body.position.y-180, 100, 100);
   playerArrow = new PlayerArrow(340, playerBase.body.position.y-180, 100, 10);  
 }
 
