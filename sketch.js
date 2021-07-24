@@ -18,7 +18,7 @@ function setup() {
   player = new Player(285, playerBase.body.position.y - 153, 50, 180);
  
   computerBase = new ComputerBase(
-    width - 300,
+    340,
     random(450, height - 300),
     180,
     150
@@ -33,7 +33,7 @@ function setup() {
   computerBow = new ComputerArcher(1050, computerBase.body.position.y-180, 100, 100);
   computerArrow = new ComputerArrow(1050, computerBase.body.position.y-180, 100, 10);
   
-  playerBow = new PlayerArcher(width-300, playerBase.body.position.y-180, 100, 100);
+  playerBow = new PlayerArcher(340, playerBase.body.position.y-180, 100, 100);
   playerArrow = new PlayerArrow(340, playerBase.body.position.y-180, 100, 10);  
 }
 
