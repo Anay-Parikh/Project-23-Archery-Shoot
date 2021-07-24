@@ -31,8 +31,8 @@ function setup() {
     180
   );
 
-  computerBow = new ComputerArcher(1050, computerBase.body.position.y-180, 100, 100);
-  computerArrow = new ComputerArrow(1050, computerBase.body.position.y-180, 100, 10);
+  computerBow = new ComputerArcher(width-290, computerBase.body.position.y-180, 100, 100);
+  computerArrow = new ComputerArrow(width-290, computerBase.body.position.y-180, 100, 10);
   
   playerBow = new PlayerArcher(340, playerBase.body.position.y-180, 100, 100);
   playerArrow = new PlayerArrow(340, playerBase.body.position.y-180, 100, 10);  
