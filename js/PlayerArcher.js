@@ -16,12 +16,12 @@ class PlayerArcher {
     display() {
         var pos = this.body.position;
         
-        if (keyIsDown(RIGHT_ARROW) && this.body.angle < -PI/3) {
-            this.body.angle += 0.02;
+        if (keyIsDown(RIGHT_ARROW) && this.body.angle < -1.2 /*-PI/3*/) {
+            this.body.angle += 0.01;
         }
   
-        if (keyIsDown(LEFT_ARROW) && this.body.angle > -2*PI/3) {
-            this.body.angle -= 0.02;
+        if (keyIsDown(LEFT_ARROW) && this.body.angle > -1.9 /*-2*PI/3*/) {
+            this.body.angle -= 0.01;
         }
         
         push();
